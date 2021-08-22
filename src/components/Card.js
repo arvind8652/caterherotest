@@ -1,13 +1,11 @@
 import React from 'react'
-import Image from './Image'
-import classes from "./Card.module.css";
+import  "./Card.css";
 import { Modal } from './Modal';
 
-export const Card = () => {
+export const Card = (props) => {
     return (
-        <div className={classes.card}>
-            <Image/>
-            <Modal/>
-        </div>
+        <div className="card">
+  <img src={props.urlpath} alt="Avatar" style={{width:"100%"}} />
+</div>
     )
 }
